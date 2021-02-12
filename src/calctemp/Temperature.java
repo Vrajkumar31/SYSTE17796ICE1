@@ -38,7 +38,12 @@ public class Temperature {
         
         System.out.println("Total temperature= " + total_temp);
         System.out.println("Average of temperature= " + calAvg);
-
+           
+        double calcMax= temp[0];
+        for(i=0; i < temp.length; i++){
+            if(temp[0] > calcMax)
+                System.out.println(calcMax);
+        }
     }
 
 }
