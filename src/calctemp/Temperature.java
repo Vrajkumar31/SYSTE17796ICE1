@@ -33,7 +33,8 @@ public class Temperature {
                 throw new IllegalArgumentException("Please enter the value between -50 to 50");
         }
         
-        double calAvg= total_temp /14;
+        final int cons= 14;
+        double calAvg= total_temp /cons;
         
         System.out.println("Total temperature= " + total_temp);
         System.out.println("Average of temperature= " + calAvg);
